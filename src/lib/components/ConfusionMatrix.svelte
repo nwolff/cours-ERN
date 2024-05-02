@@ -47,6 +47,7 @@
 				matrixData.push({
 					actual: classes[colIndex],
 					predicted: classes[rowIndex],
+					count: element,
 					percentage: percentage,
 					signedPercentage: rowIndex == colIndex ? percentage : -percentage
 				});
@@ -113,9 +114,8 @@
 				},
 				encoding: {
 					text: {
-						field: 'percentage',
+						field: 'count',
 						type: 'quantitative',
-						format: '.0%',
 						formatType: 'number'
 					},
 					color: {
