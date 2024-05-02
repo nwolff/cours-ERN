@@ -1,6 +1,5 @@
 ## TODO
 
-- Labels of confusion matrix are not rotated until we hover on them
 - Show what's being fed when training : Either as an overlay on the training zone, or as pixels on the network
 - Disable buttons while automatic training is ongoing or queue them up. Maybe show current progress
   (this should also fix 4 tensor leaks)
